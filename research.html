@@ -1,0 +1,97 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            
+            body {
+                background-image: url('https://cdn.create.vista.com/api/media/small/186932150/stock-photo-writing-text-time-to-share');
+    
+                height: 100%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            }
+            
+            </style>
+    </head>
+<ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="resource.html">Resource</a></li>
+    <li><a href="research.html">Research</a></li>
+    </ul>
+
+<body>
+
+<br>
+<br>
+<div class="transbox" align = "center">
+	<script>
+		function FormCheck() {
+			var name = document.forms["ReviewForm"]["Name"];
+			var email = document.forms["ReviewForm"]["EMail"];
+			var phone = document.forms["ReviewForm"]["Telephone"];
+			var address = document.forms["ReviewForm"]["Address"];
+            var comment = document.forms["ReviewForm"]["Comment"];
+			var salary = document.forms["ReviewForm"]["Salary"];
+            Boolean =1;
+	
+			if (name.value == "") {
+				window.alert("Please enter your name.");
+				name.focus();
+				return false;
+			}
+	
+			if (address.value == "") {
+				window.alert("Please enter your address.");
+				address.focus();
+				return false;
+			}
+	
+			if (email.value == "") {
+				window.alert(
+				"Please enter a valid e-mail address.");
+				email.focus();
+				return false;
+			}
+	
+			if (phone.value == "") {
+				window.alert(
+				"Please enter your telephone number.");
+				phone.focus();
+				return false;
+			}
+            if (comment.value == "") {
+				window.alert(
+				"Please enter your comment about the site.");
+				Comment.focus();
+				return false;
+			}
+			if (salary.value == "") {
+				window.alert(
+				"Please enter your salary");
+				Comment.focus();
+				return false;
+			}
+			
+            
+		}
+	</script>
+	
+    <form name="ReviewForm" onsubmit=" FormCheck()" method="post">
+        <p>Name: <input type="text"  name="Name" /><br>
+        Address: <input type="text" name="Address" /><br>
+        E-mail Address: <input type="text" name="EMail" /><br>
+        Telephone: <input type="text" name="Telephone" /><br>
+        Comments: <input type = "textbox" cols="55" name="Comment"> <br>
+		Salary/Earnings: <input type = "text"  name="salary"> <br>
+     <input type="submit" value="send" name="Submit" />
+     <input type="reset"  value="Reset" name="Reset" />
+        </p>
+    </form>
+
+</div>
+</body>
+
+</html>
